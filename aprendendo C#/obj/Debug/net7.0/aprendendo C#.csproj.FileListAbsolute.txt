@@ -1,0 +1,15 @@
+C:\Users\julia\Desktop\códigos\minha-trilha\aprendendo C#\bin\Debug\net7.0\aprendendo C#.exe
+C:\Users\julia\Desktop\códigos\minha-trilha\aprendendo C#\bin\Debug\net7.0\aprendendo C#.deps.json
+C:\Users\julia\Desktop\códigos\minha-trilha\aprendendo C#\bin\Debug\net7.0\aprendendo C#.runtimeconfig.json
+C:\Users\julia\Desktop\códigos\minha-trilha\aprendendo C#\bin\Debug\net7.0\aprendendo C#.dll
+C:\Users\julia\Desktop\códigos\minha-trilha\aprendendo C#\bin\Debug\net7.0\aprendendo C#.pdb
+C:\Users\julia\Desktop\códigos\minha-trilha\aprendendo C#\obj\Debug\net7.0\aprendendo C#.csproj.AssemblyReference.cache
+C:\Users\julia\Desktop\códigos\minha-trilha\aprendendo C#\obj\Debug\net7.0\aprendendo C#.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\julia\Desktop\códigos\minha-trilha\aprendendo C#\obj\Debug\net7.0\aprendendo C#.AssemblyInfoInputs.cache
+C:\Users\julia\Desktop\códigos\minha-trilha\aprendendo C#\obj\Debug\net7.0\aprendendo C#.AssemblyInfo.cs
+C:\Users\julia\Desktop\códigos\minha-trilha\aprendendo C#\obj\Debug\net7.0\aprendendo C#.csproj.CoreCompileInputs.cache
+C:\Users\julia\Desktop\códigos\minha-trilha\aprendendo C#\obj\Debug\net7.0\aprendendo C#.dll
+C:\Users\julia\Desktop\códigos\minha-trilha\aprendendo C#\obj\Debug\net7.0\refint\aprendendo C#.dll
+C:\Users\julia\Desktop\códigos\minha-trilha\aprendendo C#\obj\Debug\net7.0\aprendendo C#.pdb
+C:\Users\julia\Desktop\códigos\minha-trilha\aprendendo C#\obj\Debug\net7.0\aprendendo C#.genruntimeconfig.cache
+C:\Users\julia\Desktop\códigos\minha-trilha\aprendendo C#\obj\Debug\net7.0\ref\aprendendo C#.dll
