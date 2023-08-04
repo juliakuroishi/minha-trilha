@@ -1,0 +1,56 @@
+<!doctype html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <title>Formulário PHP</title>
+    </head>
+
+    <body>
+
+        <h3>Preencha os campos deste formulário simples e talvez não aleatório e veja o que acontece</h3>
+
+
+        <form method="post">
+            <label for="nome">Qual seu <b>nome</b>:</label><br>
+            <input type="text" id="nome" name="nomes"><br>
+
+            <label for="email">Seu <b>email</b> favorito:</label><br>
+            <input type="email" id="email" name="emails"><br>
+
+            <label for="senha">Agora aquela <b>senha</b> que não é igual às demais:</label><br>
+            <input type="password" id="senha" name="senhas"><br>
+
+            <button type="submit">Finalizado, enviar :)</button>
+        </form>
+        
+        <br />  <br /> <hr/>  <br />  <br /> 
+        
+        
+        <p>Você preencheu o nome como: <?= $nome ?> </p><br>
+        <p>Você preencheu o email como: <?= $email ?></p><br>
+        <p>E a senha ... </p><br>
+
+        <!-- ver de deixar apenas senhas numericas e ver documentação sobre o filter sanitize-->
+        <!-- tbm ver de acrescentar um cookie, criptografar senha-->
+        <?php
+           $nome = filter_input(INPUT_POST, "nomes",FILTER_SANITIZE_STRING);
+           $email = filter_input(INPUT_POST, "emails", FILTER_SANITIZE_EMAIL);
+           $senha = filter_input(INPUT_POST, "senhas", FILTER_SANITIZA_PASSWORD);
+
+
+           $nome = "";
+            $email = "";
+            $senha = "";
+
+            if (isset($_POST ["nomes"]))
+                $nome = $_POST ["nomes"];
+                
+            if (isset($_POST ["emails"]))
+                $nome = $_POST ["emails"];
+            
+            if (isset($_POST ["senhas"]))
+                $nome = $_POST ["senhas"];
+
+        ?>
+    </body>
+</html>
