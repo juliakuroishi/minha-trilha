@@ -13,7 +13,7 @@ class Usuario {
     }
 
     public function getNome(){
-        retunr $this->nome; 
+        return $this->nome; 
     }
 
     public function setNome($email){
@@ -21,7 +21,7 @@ class Usuario {
     }
 
     public function getNome(){
-        retunr $this->email; 
+        return $this->email; 
     }
     
     public function setNome($senha){
@@ -29,7 +29,7 @@ class Usuario {
     }
 
     public function getNome(){
-        retunr $this->senha; 
+        return $this->senha; 
     }
 }
 ?>
