@@ -1,0 +1,187 @@
+* {
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+/*  -------------Config Gerais---------------*/
+.titulo {
+
+    background-color: #FCF4F4;
+    margin: 30px auto;
+    text-align: center;
+    padding: 5px;
+
+}
+
+body {
+    
+    height: 100vh; /* Altura total da viewport */
+    margin: 0; /* Remove margens padrão */
+    padding: 0; /* Remove paddings padrão */
+}
+
+
+
+.modelo-title{
+    font-size: 20px;
+    font-weight: bold;
+    position: relative;
+    top:10%;
+    left:5%;
+}
+
+/*  ------------- /Config Gerais---------------*/
+
+/*  -------------Modelo 1---------------*/
+.modelo-1 {
+    background-color: #FCF4F4;
+    width: auto;
+    min-height: 400px;
+    margin-top: 50px;
+    display: flex;
+    justify-content: center;
+    
+}
+
+.boxes{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+  
+    margin: auto;
+
+}
+
+.box{
+    width: 300px;
+    height: 100px;
+    background-color: #F6DADA;
+    display: flex;
+    justify-content:center;
+    align-items: center;
+    margin: 5px;
+    border-radius: 10px;
+    
+}
+
+/*  ------------- /Modelo 1---------------*/
+
+
+/*  -------------Modelo 2---------------*/
+.modelo-2{
+    margin-top: 100px;
+}
+
+.lines{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.line{
+    width: 500px;
+    height: 100px;
+    background-color: #F6DADA;
+    display: flex;
+    justify-content:center;
+    align-items: center;
+    margin: 3px;
+    border-radius: 10px;
+}
+
+/*  ------------- /Modelo 2---------------*/
+
+
+
+/*  -------------Modelo Grid---------------*/
+
+
+
+.modelo-grid {
+    background-color: #FCF4F4;
+    width: auto;
+    min-height: 400px;
+    margin-top: 50px;
+    padding: 30px 40px;
+    
+}
+
+.grids{
+    display: grid;
+    grid-template-columns: 3fr 2fr;
+    grid-template-rows: repeat(2, 100px);
+    
+}
+
+.item{
+    border: 2px solid #F6DADA;
+}
+
+.sub-item{
+    display: grid;
+    align-items: center;
+    justify-content: center;
+    
+}
+.inner-grid{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(3, 1fr);
+    
+}
+
+/*   crescente    */
+
+.inner-grid .inner-item-2{
+    grid-column: 3;
+}
+
+.inner-grid .inner-item-3{
+    grid-column: 2;
+}
+
+.inner-grid .inner-item-4{
+    grid-column: 1;
+}
+
+.inner-item-color{
+    background-color: lightgreen;
+    padding: 2px;
+}
+
+
+/*   xadrez    */
+.inner-grid .inner-item-a{
+    grid-column: 1;
+}
+
+.inner-grid .inner-item-b{
+    grid-column: 3;
+}
+.inner-grid .inner-item-c{
+    grid-column: 2;
+}
+.inner-grid .inner-item-d{
+    grid-column: 1;
+}
+.inner-grid .inner-item-e{
+    grid-column: 3;
+}
+
+/*  ------------- /Modelo Grid---------------*/
+
+/*  ------------- Footer ---------------*/
+footer{
+    background-color: #F6DADA;
+    margin-top: 30px;
+    font-weight: bold;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    padding-left: 50px;
+}
+
+
+/*  -------------Footer---------------*/
+
