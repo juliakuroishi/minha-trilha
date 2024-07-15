@@ -1,11 +1,24 @@
+:root {
+    /*----- cores ----- */
+    --cor-primaria: #FCF4F4;
+    --cor-secundaria: #F6DADA;
+    --cor-terciaria: #FFFFFF; /* Branco */
+    --cor-texto: #000000; /* Preto */
+    --cor-texto-secundario: #646464; /* Cinza Escuro */
+    --cor-destaque: #6FA8DC; 
+    --cor-neutra: #E0E0E0; /* Cinza Claro */
+}
+
+
+/*  -------------Config Gerais---------------*/
+
 * {
     font-family: Arial, Helvetica, sans-serif;
 }
 
-/*  -------------Config Gerais---------------*/
 .titulo {
 
-    background-color: #FCF4F4;
+    background-color: var(--cor-primaria);
     margin: 30px auto;
     text-align: center;
     padding: 5px;
@@ -13,79 +26,83 @@
 }
 
 body {
-    
-    height: 100vh; /* Altura total da viewport */
-    margin: 0; /* Remove margens padrão */
-    padding: 0; /* Remove paddings padrão */
+    margin: 0;
+    /* Remove margens padrão */
+    padding: 0;
+    /* Remove paddings padrão */
 }
 
+header p {
+    color: var(--cor-texto-secundario);
+}
 
-
-.modelo-title{
+.modelo-title {
     font-size: 20px;
     font-weight: bold;
     position: relative;
-    top:10%;
-    left:5%;
+    top: 10%;
+    left: 5%;
 }
-
 /*  ------------- /Config Gerais---------------*/
+
 
 /*  -------------Modelo 1---------------*/
 .modelo-1 {
-    background-color: #FCF4F4;
-    width: auto;
+    background-color: var(--cor-primaria);
+    width: 0 auto;
     min-height: 400px;
     margin-top: 50px;
-    display: flex;
+    display: flex; 
     justify-content: center;
-    
+   
 }
 
-.boxes{
+.boxes {
     display: flex;
     flex-direction: row;
     justify-content: center;
     align-items: center;
     flex-wrap: wrap;
-  
     margin: auto;
-
+    color: var(--cor-texto-secundario);
 }
 
-.box{
+.box {
     width: 300px;
     height: 100px;
-    background-color: #F6DADA;
+    background-color: var(--cor-secundaria);
     display: flex;
-    justify-content:center;
+    justify-content: center;
     align-items: center;
     margin: 5px;
     border-radius: 10px;
-    
 }
 
 /*  ------------- /Modelo 1---------------*/
 
 
+
 /*  -------------Modelo 2---------------*/
-.modelo-2{
+.modelo-2 {
     margin-top: 100px;
+    margin-bottom: 100px;
 }
 
-.lines{
+.lines {
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    color: var(--cor-texto-secundario);
+    
 }
 
-.line{
+.line {
     width: 500px;
     height: 100px;
-    background-color: #F6DADA;
+    background-color: var(--cor-secundaria);
     display: flex;
-    justify-content:center;
+    justify-content: center;
     align-items: center;
     margin: 3px;
     border-radius: 10px;
@@ -100,81 +117,104 @@ body {
 
 
 .modelo-grid {
-    background-color: #FCF4F4;
+    background-color: var(--cor-primaria);
     width: auto;
-    min-height: 400px;
-    margin-top: 50px;
-    padding: 30px 40px;
+    min-height: 300px;
+    margin-top: 60px;
+    padding: 30px ;
     
 }
 
-.grids{
+.grids {
     display: grid;
     grid-template-columns: 3fr 2fr;
     grid-template-rows: repeat(2, 100px);
-    
+    padding: 30px ;
+    max-width: 900px;
+    width: 100%;
+    margin: 0 auto;
+    color: var(--cor-texto-secundario);
+
 }
 
-.item{
-    border: 2px solid #F6DADA;
-}
-
-.sub-item{
+.item {
+    border: 2px solid var(--cor-secundaria);
     display: grid;
     align-items: center;
     justify-content: center;
     
 }
-.inner-grid{
+
+
+
+.item-grid-crescente{
+    border: 2px solid var(--cor-secundaria);
     display: grid;
+    align-items: stretch;
+    
     grid-template-columns: repeat(3, 1fr);
     grid-template-rows: repeat(3, 1fr);
     
 }
 
+.inner-grid-xadrez{
+    border: 2px solid var(--cor-secundaria);
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(3, 1fr);
+}
+
+.inner-item {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: var(--cor-terciaria);
+    border-radius: 5px;
+    color: var(--cor-texto-secundario);
+}
+
 /*   crescente    */
 
-.inner-grid .inner-item-2{
+.item-grid-crescente .inner-item-2 {
     grid-column: 3;
 }
 
-.inner-grid .inner-item-3{
+.item-grid-crescente .inner-item-3 {
     grid-column: 2;
 }
 
-.inner-grid .inner-item-4{
+.item-grid-crescente .inner-item-4 {
     grid-column: 1;
-}
-
-.inner-item-color{
-    background-color: lightgreen;
-    padding: 2px;
 }
 
 
 /*   xadrez    */
-.inner-grid .inner-item-a{
+.inner-grid-xadrez .inner-item-a {
     grid-column: 1;
 }
 
-.inner-grid .inner-item-b{
+.inner-grid-xadrez .inner-item-b {
     grid-column: 3;
 }
-.inner-grid .inner-item-c{
+
+.inner-grid-xadrez .inner-item-c {
     grid-column: 2;
 }
-.inner-grid .inner-item-d{
+
+.inner-grid-xadrez .inner-item-d {
     grid-column: 1;
 }
-.inner-grid .inner-item-e{
+
+.inner-grid-xadrez .inner-item-e {
     grid-column: 3;
 }
+
 
 /*  ------------- /Modelo Grid---------------*/
 
 /*  ------------- Footer ---------------*/
-footer{
-    background-color: #F6DADA;
+footer {
+    background-color: var(--cor-secundaria);
     margin-top: 30px;
     font-weight: bold;
     padding-top: 20px;
@@ -184,4 +224,3 @@ footer{
 
 
 /*  -------------Footer---------------*/
-
