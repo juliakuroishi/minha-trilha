@@ -1,5 +1,5 @@
 var numero1 = Number(prompt("Digite um número: "));
-var numero2 = 2;
+var numero2 = Number(prompt("Digite outro número: "));
 var operacao = prompt("Selecione uma operação: + | - | / | * | ** ");
 var resultado;
 
