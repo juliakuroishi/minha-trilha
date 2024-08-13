@@ -8,6 +8,7 @@
 import SwiftUI
 
 struct ContentView: View { //define o ponto de entrada do codigo: ponto de renderizar a interface grafica
+    
     @State private var selected = "Baseball"
     @State private var id = 1
         
@@ -15,12 +16,12 @@ struct ContentView: View { //define o ponto de entrada do codigo: ponto de rende
     var cores: [Color] = [.blue, .cyan, .gray, .green, .indigo, .mint, .orange, .pink, .purple, .red]
     var body: some View { //
         VStack { //organiza os elementos em uma pilha vertical
-            Spacer()
+            Spacer()  //cria espaco
             Text("Por que não tentar...")
                 .font(.largeTitle.bold())
             Spacer()
             Circle()
-                .fill(cores.randomElement() ?? .green)
+                .fill(cores.randomElement() ?? .green) //caso o array esteja vazio, ele vai selecionar a cor verde
                 .padding()
                 .overlay(
                     Image(systemName: "figure.\(selected.lowercased())")
