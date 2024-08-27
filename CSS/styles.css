@@ -1,0 +1,226 @@
+:root {
+    /*----- cores ----- */
+    --cor-primaria: #FCF4F4;
+    --cor-secundaria: #F6DADA;
+    --cor-terciaria: #FFFFFF; /* Branco */
+    --cor-texto: #000000; /* Preto */
+    --cor-texto-secundario: #646464; /* Cinza Escuro */
+    --cor-destaque: #6FA8DC; 
+    --cor-neutra: #E0E0E0; /* Cinza Claro */
+}
+
+
+/*  -------------Config Gerais---------------*/
+
+* {
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.titulo {
+
+    background-color: var(--cor-primaria);
+    margin: 30px auto;
+    text-align: center;
+    padding: 5px;
+
+}
+
+body {
+    margin: 0;
+    /* Remove margens padrão */
+    padding: 0;
+    /* Remove paddings padrão */
+}
+
+header p {
+    color: var(--cor-texto-secundario);
+}
+
+.modelo-title {
+    font-size: 20px;
+    font-weight: bold;
+    position: relative;
+    top: 10%;
+    left: 5%;
+}
+/*  ------------- /Config Gerais---------------*/
+
+
+/*  -------------Modelo 1---------------*/
+.modelo-1 {
+    background-color: var(--cor-primaria);
+    width: 0 auto;
+    min-height: 400px;
+    margin-top: 50px;
+    display: flex; 
+    justify-content: center;
+   
+}
+
+.boxes {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    margin: auto;
+    color: var(--cor-texto-secundario);
+}
+
+.box {
+    width: 300px;
+    height: 100px;
+    background-color: var(--cor-secundaria);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 5px;
+    border-radius: 10px;
+}
+
+/*  ------------- /Modelo 1---------------*/
+
+
+
+/*  -------------Modelo 2---------------*/
+.modelo-2 {
+    margin-top: 100px;
+    margin-bottom: 100px;
+}
+
+.lines {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    color: var(--cor-texto-secundario);
+    
+}
+
+.line {
+    width: 500px;
+    height: 100px;
+    background-color: var(--cor-secundaria);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 3px;
+    border-radius: 10px;
+}
+
+/*  ------------- /Modelo 2---------------*/
+
+
+
+/*  -------------Modelo Grid---------------*/
+
+
+
+.modelo-grid {
+    background-color: var(--cor-primaria);
+    width: auto;
+    min-height: 300px;
+    margin-top: 60px;
+    padding: 30px ;
+    
+}
+
+.grids {
+    display: grid;
+    grid-template-columns: 3fr 2fr;
+    grid-template-rows: repeat(2, 100px);
+    padding: 30px ;
+    max-width: 900px;
+    width: 100%;
+    margin: 0 auto;
+    color: var(--cor-texto-secundario);
+
+}
+
+.item {
+    border: 2px solid var(--cor-secundaria);
+    display: grid;
+    align-items: center;
+    justify-content: center;
+    
+}
+
+
+
+.item-grid-crescente{
+    border: 2px solid var(--cor-secundaria);
+    display: grid;
+    align-items: stretch;
+    
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(3, 1fr);
+    
+}
+
+.inner-grid-xadrez{
+    border: 2px solid var(--cor-secundaria);
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(3, 1fr);
+}
+
+.inner-item {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: var(--cor-terciaria);
+    border-radius: 5px;
+    color: var(--cor-texto-secundario);
+}
+
+/*   crescente    */
+
+.item-grid-crescente .inner-item-2 {
+    grid-column: 3;
+}
+
+.item-grid-crescente .inner-item-3 {
+    grid-column: 2;
+}
+
+.item-grid-crescente .inner-item-4 {
+    grid-column: 1;
+}
+
+
+/*   xadrez    */
+.inner-grid-xadrez .inner-item-a {
+    grid-column: 1;
+}
+
+.inner-grid-xadrez .inner-item-b {
+    grid-column: 3;
+}
+
+.inner-grid-xadrez .inner-item-c {
+    grid-column: 2;
+}
+
+.inner-grid-xadrez .inner-item-d {
+    grid-column: 1;
+}
+
+.inner-grid-xadrez .inner-item-e {
+    grid-column: 3;
+}
+
+
+/*  ------------- /Modelo Grid---------------*/
+
+/*  ------------- Footer ---------------*/
+footer {
+    background-color: var(--cor-secundaria);
+    margin-top: 30px;
+    font-weight: bold;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    padding-left: 50px;
+}
+
+
+/*  -------------Footer---------------*/
