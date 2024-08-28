@@ -12,7 +12,7 @@ O objetivo é documentar meu aprendizado e progresso diário!
 
 ## Tecnologias Usadas
 * HTML/CSS: Para desenvolvimento web e design.
-* JavaScript: Para interatividade e funcionalidades dinâmicas.
+* JavaScript: Para interatividade, funcionalidades dinâmicas e treinamento de lógica.
 * Python: Minha primeira linguagem.
 * Swift: Para desenvolvimento iOS.
 * PHP: Para trabalhar com wordpress.
