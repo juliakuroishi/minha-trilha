@@ -1,0 +1,25 @@
+body {
+    background-color: #A9CCE3;
+    color: #333;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    width: 50%;
+    margin: 100px auto;
+}
+
+h1 {
+    color: #F7E9B0;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+
+button {
+    background-color: #F2C2B7;
+    color: #000;
+    border-radius: 10px;
+    border: none;
+    width: 100px;
+    height: 30px;
+    padding: 5px;
+    font-size: 16px;
+    font-weight: 500;
+
+}
