@@ -1,6 +1,6 @@
 #
 #   Livro: Fundamentos de Python para Ciência de Dados
-#   Capítulo 7 - Criando arrays
+#   Capítulo 7 - NUMPY
 #
 
 import numpy as np 
@@ -74,6 +74,7 @@ arrayFiltrado = arrayAntes[arrayBool]
 print("\nArray filtrado com a máscara booleana:")
 print(arrayFiltrado)
 
+#imprime o bool após aplicar a condição
 mascaraPares = arrayAntes % 2 == 0
 print("\nMáscara booleana para números pares:")
 print(mascaraPares)
@@ -83,3 +84,7 @@ arrayPares = arrayAntes[mascaraPares]
 print("\nArray filtrado com números pares:")
 print(arrayPares)
 
+##
+# é possível obter dados estatísticos com alguns métodos, como:
+# array.max() array.min() array.sum()
+#
