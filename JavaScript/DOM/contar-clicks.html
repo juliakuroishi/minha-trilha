@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contar cliques</title>
+</head>
+<body>
+    <h1>Vamos contar os cliques</h1>
+    <p id="cliques"></p>
+    <button id="botao" onclick="contador()">Click</button>
+
+    <script>
+        let i = 0;
+
+        function contador() {
+            i++
+            document.getElementById("cliques").innerHTML = i;
+            
+            if (i >= 25) {
+                document.getElementById("cliques").innerText = "Chega, vai estragar seu mouse";
+            }
+
+            if (i >= 50) {
+                document.getElementById("cliques").innerText = "Serio, chega. Sossega";
+            }
+        }
+        
+    </script>
+</body>
+</html>
